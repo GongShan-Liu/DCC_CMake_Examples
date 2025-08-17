@@ -6,7 +6,7 @@
 # 1. CMake配置Maya SDK开发
 - 本cmake案例参考项目: https://github.com/volodinroman/maya-cmake
 - 需要本地安装好对应的maya版本软件
-- 下载对应的maya版本SDK 并放置到 CMake_Maya/maya2018 (不用带版本号)
+- 下载对应的maya版本SDK 并放置到 CMake_Maya/maya2020 (不用带版本号)
     - 例如: maya2018.7 sdk下载链接 (根据实际修改下载路径的版本号即可下载对应的版本sdk)
       - https://autodesk-adn-transfer.s3-us-west-2.amazonaws.com/ADN+Extranet/M%26E/Maya/devkit+2018/Autodesk_Maya_2018_7_Update_DEVKIT_Windows.zip
       - https://autodesk-adn-transfer.s3-us-west-2.amazonaws.com/ADN+Extranet/M%26E/Maya/devkit+2018/Autodesk_Maya_2018_7_Update_DEVKIT_Mac.dmg
