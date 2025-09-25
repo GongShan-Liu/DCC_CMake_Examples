@@ -1,0 +1,1 @@
+python("import os\nexecfile(os.getcwd() + \"\\\\maya_start_cmd.py\")");

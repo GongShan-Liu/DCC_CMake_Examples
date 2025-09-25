@@ -1,7 +1,7 @@
 # 核心CMakeLists.txt文件，其中包含外部模块和cmake命令
 
 # 设置cmake版本
-cmake_minimum_required(VERSION 3.30.2) 
+# cmake_minimum_required(VERSION 3.30.2) 
 
 # 防止CMake的自动重新生成 (在vsc构建需要设置vsc的cmake工具的自动构建)
 set(CMAKE_SUPPRESS_REGENERATION true)

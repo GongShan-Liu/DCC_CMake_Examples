@@ -54,8 +54,10 @@ else()
 endif()
 
 # SDK路径
-get_filename_component(MAYA_BUILD_ENV ${CMAKE_MODULE_PATH} DIRECTORY) # 获取maya插件文件夹的根目录
-set(MAYA_SDK_LOCATION ${MAYA_BUILD_ENV}/SDK/maya${MAYA_VERSION}${MAYA_INSTALL_PATH_SUFFIX})
+if("${MAYA_SDK_LOCATION}" STREQUAL "")
+    get_filename_component(MAYA_BUILD_ENV ${CMAKE_MODULE_PATH} DIRECTORY) # 获取maya插件文件夹的根目录
+    set(MAYA_SDK_LOCATION ${MAYA_BUILD_ENV}/SDK/maya${MAYA_VERSION}${MAYA_INSTALL_PATH_SUFFIX})
+endif()
 message("[Log] Maya SDK location: ${MAYA_SDK_LOCATION}")
 
 # Maya安装路径

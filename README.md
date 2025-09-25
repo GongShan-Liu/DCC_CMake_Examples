@@ -16,9 +16,10 @@
 - CMake_Maya/MainMayaCMake.bat 运行bat 即可执行 修改 compile_maya_version变量的版本号 即可根据情况编译
 - CMake_Maya/CMakeLists.txt 是配置maya的主cmake文件
 - cmake/FindMaya.cmake 是配置maya插件的核心cmake文件
-- 编译成功之后的测试:
-  - 在maya的Plug-in Manager中加载 编译好的插件 CMake_Maya\plug-ins\Release\2020\testCommandPlugin.mll
-  - 在脚本编辑器窗口 MEL窗口中 输入 runTest 并运行就会打印信息 // Hello, Maya! // 就表示测试成功
+- 编译成功后:
+  - 每次编译无需关闭和重启maya，MainMayaCMake.bat已自动判断maya是否开启
+  - 如果maya未打开，那么会自动执行 maya_debug/test_maya.bat文件，自动打开maya并开启maya的python命令接收端口7072
+  - 如果maya已打开，则会查询接收端口，并发送卸载插件命令，每次编译成功都会执行test_maya.py脚本
 
 # 2. CMake配置3DsMax SDK开发
 - 本cmake案例参考项目: https://github.com/sideeffects/HoudiniEngineFor3dsMax
